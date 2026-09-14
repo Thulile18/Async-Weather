@@ -77,59 +77,82 @@ use them. Adding this reference avoids needing to edit `tsconfig.json`.
 Actual output will vary since it comes from a live request, but the
 shape looks like this:
 
-**`npx tsx src/callback.ts`**
+**`npm run callback`**
 ```
 === Callback Version ===
-
-Current weather (Johannesburg): {
-  temperature: 18.4,
-  feelsLike: 17.9,
+Current weather (Pietermaritzburg): {
+  temperature: 26.84,
+  feelsLike: 26.89,
   description: 'scattered clouds'
 }
-
 Latest headlines:
 1. His mother had always taught him
 2. He was an expert but not in a discipline
-3. ...
-
+3. Dave watched as the forest burned up on the hill.
+4. All he wanted was a candy bar.
+5. Hopes and dreams were dashed that day.
 Done (callback version).
 ```
 
-**`npx tsx src/promise.ts`**
+**`npm run promise`**
 ```
 === Promise Version: chained (weather -> news) ===
-
-Current weather (Johannesburg): { temperature: 18.4, feelsLike: 17.9, description: 'scattered clouds' }
+Current weather (Pietermaritzburg): {
+temperature: 26.84,
+feelsLike: 26.89,
+description: 'scattered clouds'
+}
 Latest headlines:
-1. ...
 
+	1.	His mother had always taught him
+	2.	He was an expert but not in a discipline
+	3.	Dave watched as the forest burned up on the hill.
+	4.	All he wanted was a candy bar.
+	5.	Hopes and dreams were dashed that day.
 === Promise Version: Promise.all (parallel) ===
-
-Current weather (Johannesburg): { temperature: 18.4, feelsLike: 17.9, description: 'scattered clouds' }
+Current weather (Pietermaritzburg): {
+temperature: 26.84,
+feelsLike: 26.89,
+description: 'scattered clouds'
+}
 Latest headlines:
-1. ...
 
+	1.	His mother had always taught him
+	2.	He was an expert but not in a discipline
+	3.	Dave watched as the forest burned up on the hill.
+	4.	All he wanted was a candy bar.
+	5.	Hopes and dreams were dashed that day.
 === Promise Version: Promise.race ===
-
-"news" responded first.
-
+"weather" responded first.
 Done (promise version).
 ```
 
-**`npx tsx src/async.ts`**
+**`npm run async`**
 ```
 === Async/Await Version: sequential (weather -> news) ===
-
-Current weather (Johannesburg): { temperature: 18.4, feelsLike: 17.9, description: 'scattered clouds' }
+Current weather (Pietermaritzburg): {
+  temperature: 26.84,
+  feelsLike: 26.89,
+  description: 'scattered clouds'
+}
 Latest headlines:
-1. ...
-
+1. His mother had always taught him
+2. He was an expert but not in a discipline
+3. Dave watched as the forest burned up on the hill.
+4. All he wanted was a candy bar.
+5. Hopes and dreams were dashed that day.
 === Async/Await Version: Promise.all (parallel) ===
-
-Current weather (Johannesburg): { temperature: 18.4, feelsLike: 17.9, description: 'scattered clouds' }
+Current weather (Pietermaritzburg): {
+  temperature: 26.84,
+  feelsLike: 26.89,
+  description: 'scattered clouds'
+}
 Latest headlines:
-1. ...
-
+1. His mother had always taught him
+2. He was an expert but not in a discipline
+3. Dave watched as the forest burned up on the hill.
+4. All he wanted was a candy bar.
+5. Hopes and dreams were dashed that day.
 Done (async/await version).
 ```
 
