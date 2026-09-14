@@ -37,7 +37,7 @@ function loadEnvFile(): void {
 loadEnvFile();
 
 const API_KEY = process.env.OPENWEATHER_API_KEY;
-const CITY = "Johannesburg";
+const CITY = "Pietermaritzburg";
 const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
   CITY
 )}&units=metric&appid=${API_KEY}`;
