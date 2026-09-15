@@ -8,6 +8,11 @@ requests use Node's built-in `https` module directly.
 This project's `package.json` and `tsconfig.json` were provided as a
 starting point and are left untouched. No new npm packages were added.
 
+
+## Project Socialify:
+
+<img src="https://socialify.git.ci/Thulile18/Async-Weather/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Async-Weather" width="640" height="320" />
+
 ## APIs used
 
 - **Weather**: [OpenWeatherMap](https://openweathermap.org/api) current
